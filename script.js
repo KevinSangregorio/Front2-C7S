@@ -48,7 +48,7 @@
 const padreTemplate = document.querySelector(".contenedor");
 
 function crearTemplate() {
-   for (let i = 0; i < 2; i++) {
+   for (let i = 0; i < 4; i++) {
        const link = prompt("Ingresa el hipervínculo de la imagen " + (i+1));
        const rutaImagen = prompt("Ingresa la ruta de la imagen " + (i+1));
        
@@ -69,6 +69,6 @@ crearTemplate();
 /* 
 -Nodo padre: div.contenedor
 -Nodo hijo repetitivo: div.tarjeta > a > img
--Explicación: 
+-Explicación: Creamos una funcion la cual contiene un iterador, un for en este caso, y en cada iteracion le pide al usuario un hipervinculo y la ruta de una imagen, para luego esos valores obtenidos y asignados a una variable, sean reutilizados dentro del template gracias a al uso de "template strings". En cada iteracion se va a agregar un template distinto (o no, dependiendo de lo que ingrese el usuario. Por último, al final de cada iteración vamos a agregar dicho template al html mediante el metodo innerHtml al respectivo padre. 
 */
 
